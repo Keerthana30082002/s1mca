@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <script>
+    function num()
+    {
+        var n=document.getElementById('n').value;
+        document.getElementById('num1').innerHTML="Math.pow("+n+",2)[Returns the result of raising x to the power of 2]="+Math.pow(n,2)+"<br>"+
+        "Math.abs("+n+",)[Returns the abs value]="+Math.abs(n)+"<br>";
+    }
+    function str()
+    {
+        var n=document.getElementById("s").value;
+        document.getElementById('num2').innerHTML="String s="+n+"Returns the length of the string"+n.length+"<br>"+"charAt:returns the character at specified index s.charAt(0)="+n.charAt(0)+"<br>"; 
+       }
+   </script>
+   <style>
+    .div1
+    {
+        display:flex;
+        flex-direction :row;
+    }
+    .div2
+    { 
+        width:65%;
+    }
+   </style>
+</head>
+<body>
+    <h1>NUMERIC FUNCTIONS</h1>
+    <input type="text" placeholder="Enter a num" id="n">
+    <button onclick="num()">Numeric Functions</button>
+    <p id="num1"></p>
+    <br>
+    <h1>String Functions</h1>
+    <input type="text" placeholder="Enter a string: " id="s">
+    <button onclick="str()">String Functions</button>
+    <p id="num2"></p>
+</body>
+</html>
